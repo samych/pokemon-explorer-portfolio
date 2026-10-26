@@ -1,0 +1,49 @@
+:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1e2931;background:#f4f6f7;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}*{box-sizing:border-box}body{margin:0;min-width:320px}button,select{font:inherit}.app-shell{max-width:1220px;margin:0 auto;padding:54px 30px 24px}.app-header{display:flex;justify-content:space-between;gap:30px;align-items:end;padding-bottom:30px;border-bottom:1px solid #d8dfe2}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.18em;color:#d46b4c;margin:0 0 12px}h1{font-size:clamp(2.3rem,5vw,4rem);letter-spacing:-.06em;line-height:1.08;margin:0;font-weight:800}h1 em{font-style:normal;color:#dc7957}.intro{color:#69757e;font-size:14px;line-height:1.6;margin:18px 0 0;max-width:560px}.dataset-count{text-align:right;white-space:nowrap;color:#849098;font-size:12px}.dataset-count strong{display:block;font-size:45px;color:#1e2931;line-height:1}.dataset-count span{display:block;margin-top:8px}.controls{padding:26px 0 20px}.type-filters{display:flex;flex-wrap:wrap;gap:8px}.filter-button{border:1px solid #d5dce0;background:#fff;border-radius:100px;padding:9px 15px;font-size:12px;color:#4c5962;cursor:pointer}.filter-button:hover{border-color:#dc7957}.filter-button.active{background:#1e2931;border-color:#1e2931;color:white}.control-bottom{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-top:20px}.sort-label,.favorites-label{font-size:12px;color:#56636c;display:flex;align-items:center;gap:9px}.sort-label select{background:#fff;border:1px solid #d5dce0;border-radius:7px;padding:9px 10px;color:#1e2931}.favorites-label{cursor:pointer}.favorites-label input{accent-color:#dc7957}.favorites-label span{color:#89959c}.legend{display:flex;align-items:center;gap:18px;margin:0 0 16px;font-size:12px;color:#66737d}.legend>span{display:flex;align-items:center;gap:6px}.legend-dot{width:9px;height:9px;border-radius:50%;display:inline-block}.hp-dot{background:#49aa95}.attack-dot{background:#ed8961}.legend small{margin-left:auto;color:#97a0a7}.pokemon-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}.pokemon-card{background:white;border:1px solid #e4e8eb;border-radius:15px;padding:16px 18px 14px;text-align:center;box-shadow:0 3px 12px #18263005;transition:transform .2s,box-shadow .2s}.pokemon-card:hover{transform:translateY(-3px);box-shadow:0 8px 22px #18263012}.card-top{display:flex;justify-content:space-between;align-items:center}.pokemon-id{font-size:11px;color:#a0abb1;font-weight:700;letter-spacing:.08em}.favorite{background:none;border:0;font-size:25px;line-height:1;color:#9aa5ab;cursor:pointer;padding:0 3px}.favorite.is-favorite{color:#df745c}.sprite{display:block;width:108px;height:108px;object-fit:contain;image-rendering:pixelated;margin:0 auto 5px}.pokemon-card h2{font-size:18px;letter-spacing:-.03em;margin:4px 0 9px}.type-pill{display:inline-block;background:#edf0f2;color:#4e5a64;border-radius:100px;padding:5px 11px;font-size:11px;font-weight:700}.type-grass{background:#e2f2e7;color:#36895b}.type-fire{background:#ffede5;color:#bd6545}.type-water{background:#e6effc;color:#467fb9}.type-electric{background:#fff4d5;color:#a17b20}.type-psychic{background:#fbe5f1;color:#aa5888}.type-dragon{background:#ece8fc;color:#735db2}.type-ghost{background:#eae8f3;color:#70638d}.stats{text-align:left;margin:22px 0 17px}.stat+.stat{margin-top:12px}.stat-heading{display:flex;justify-content:space-between;font-size:11px;color:#68747c;margin-bottom:6px}.stat-heading strong{color:#24313a;font-variant-numeric:tabular-nums}.stat-track{height:8px;background:#edf0f2;border-radius:100px;overflow:hidden}.stat-fill{height:100%;border-radius:100px;transition:width .25s ease}.card-bottom{border-top:1px solid #eef0f2;padding-top:12px;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#87929a}.card-bottom strong{font-size:14px;color:#27343e}.empty-state{background:white;padding:50px 20px;text-align:center;border-radius:14px;color:#65727b}.app-footer{margin-top:45px;padding-top:18px;border-top:1px solid #d8dfe2;font-size:11px;color:#96a0a7}@media(max-width:600px){.app-shell{padding:32px 16px}.app-header{align-items:start}.dataset-count{display:none}.control-bottom{flex-wrap:wrap}.legend{flex-wrap:wrap}.legend small{width:100%;margin-left:0}.pokemon-grid{grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px}.pokemon-card{padding:12px}.sprite{width:90px;height:90px}.pokemon-card h2{font-size:16px}}
+
+
+/* SC / DATAVIZ portfolio visual identity */
+:root {
+  font-family: "Montserrat", sans-serif;
+  color: #f3f1ec;
+  background: #16191d;
+  --accent: #f07955;
+  --background: #16191d;
+  --text: #f3f1ec;
+  --muted: #a2aab0;
+  --panel: #22272c;
+  --border: #41494e;
+}
+body { background: var(--background); color: var(--text); }
+.app-shell { max-width: 1200px; }
+.app-header, .app-footer { border-color: var(--border); }
+.eyebrow, h1 em { color: var(--accent); }
+h1 em { font-style: italic; }
+.intro, .dataset-count, .sort-label, .favorites-label, .legend, .app-footer { color: var(--muted); }
+.dataset-count strong { color: var(--text); }
+.filter-button, .sort-label select { background: var(--panel); color: var(--text); border-color: var(--border); }
+.filter-button:hover { border-color: var(--accent); }
+.filter-button.active { background: var(--accent); border-color: var(--accent); color: var(--background); }
+.favorites-label input { accent-color: var(--accent); }
+.pokemon-card { background: var(--panel); border-color: var(--border); box-shadow: none; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+.pokemon-card:hover { border-color: var(--accent); box-shadow: 0 10px 25px #00000024; }
+.pokemon-card h2, .card-bottom strong, .stat-heading strong { color: var(--text); }
+.pokemon-id, .card-bottom, .stat-heading { color: var(--muted); }
+.card-bottom { border-color: var(--border); }
+.type-pill { background: #30373c; color: var(--text); }
+.stat-track { background: var(--border); }
+.hp-dot { background: #819099; }
+.attack-dot { background: var(--accent); }
+.empty-state { background: var(--panel); color: var(--muted); }
+.favorite.is-favorite { color: var(--accent); }
+/* Sprites: warm sepia/orange at rest, original colors on card hover. */
+.pokemon-card .sprite {
+  filter: grayscale(1) sepia(1) saturate(3) hue-rotate(330deg);
+  transition: filter .4s ease, transform .4s ease;
+}
+.pokemon-card:hover .sprite, .pokemon-card:focus-within .sprite {
+  filter: none;
+  transform: scale(1.08);
+}
+@media (prefers-reduced-motion: reduce) {
+  .pokemon-card, .pokemon-card .sprite { transition: none; }
+}
